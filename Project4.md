@@ -1,6 +1,6 @@
 # MEAN STACK DEPLOYMENT TO UBUNTU IN AWS
 
-Step 1: Creating an AWS instance & Connecting to it using Windows Terminal
+#Step 1: Creating an AWS instance & Connecting to it using Windows Terminal
 
 Created an Amazon account and provisioned an Ubuntu Server 22.04 LTS (HVM), SSD Volume Type EC2 Instance with a free tier option.
 
@@ -18,7 +18,7 @@ Then I now ran the code below to install nodejs
 
 ' sudo apt install -y nodejs'
 
-Step 3: Install MongoDB
+#Step 3: Install MongoDB
 
 Before install MongoDB, we must run the following commands
 
@@ -47,4 +47,6 @@ Add a file to it named server.js by running the code below
 Copy and paste the web server code below into the server.js file.
 'var express = require('express'); var bodyParser = require('body-parser'); var app = express(); app.use(express.static(__dirname + '/public')); app.use(bodyParser.json()); require('./apps/routes')(app); app.set('port', 3300); app.listen(app.get('port'), function() { console.log('Server up: http://localhost:' + app.get('port')); });'
 
-Step 4:INSTALL EXPRESS AND SET UP ROUTES TO THE SERVER
+#Step 4:INSTALL EXPRESS AND SET UP ROUTES TO THE SERVER
+
+We also will use Mongoose package which provides a straight-forward, schema-based solution to model your application data. We will use Mongoose to establish a schema for the database to store data of our book register.
