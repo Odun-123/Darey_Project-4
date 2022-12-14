@@ -95,11 +95,16 @@ Copy and paste the code below into index.html file.
 <!doctype html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> <script src="script.js"></script>
-Name:	
+Name:
+
 Isbn:	
+
 Author:	
+
 Pages:	
+
 Add
+
     </tr>
     <tr ng-repeat="book in books">
       <td>{{book.name}}</td>
@@ -111,3 +116,7 @@ Add
     </tr>
   </table>
 </div>
+
+Change the directory back to Books with command cd ..
+
+and then start the server node server.js
