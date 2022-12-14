@@ -120,3 +120,11 @@ Add
 Change the directory back to Books with command cd ..
 
 and then start the server node server.js
+
+![node js](https://user-images.githubusercontent.com/117018714/207733325-d678e978-dc8a-4edf-9b84-d653f91524f3.png)
+
+The server is now up and running, we can connect it via port 3300
+
+Run curl -s http://169.254.169.254/latest/meta-data/public-ipv4 for Public IP address or curl -s http://169.254.169.254/latest/meta-data/public-hostname for Public DNS name.
+
+
